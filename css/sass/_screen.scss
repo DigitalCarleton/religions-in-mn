@@ -523,7 +523,7 @@ body {
     #content {
         background:#fff;
         padding: rhythm() $gutter-width;
-        overflow:hidden;
+        // overflow:hidden;
         @include pie-clearfix();
 
         & > div, nav {
