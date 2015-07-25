@@ -23,7 +23,7 @@
     <!-- Stylesheets -->
     <?php
     queue_css_file(array('iconfonts', 'style'));
-    queue_css_file('bigfoot-default');
+    queue_css_file('bigfoot-number');
     echo head_css();
     ?>
 
@@ -34,7 +34,13 @@
     <?php queue_js_file('bigfoot'); ?>
     <?php echo head_js(); ?>
     <script type="text/javascript">
-        jQuery.bigfoot();
+        var bigfoot = jQuery.bigfoot(
+                {
+                    activateOnHover:true,
+                    deleteOnUnhover:true,
+                    actionOriginalFN:"ignore",
+                }
+            );
     </script>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>

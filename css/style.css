@@ -1276,10 +1276,6 @@ th {
     background-color: #d3d6bc;
   }
 
-  .exhibit-block {
-    overflow: hidden;
-  }
-
   .exhibit-block > *:last-child {
     margin-bottom: 0;
   }
