@@ -455,7 +455,11 @@ th {
     margin-bottom: 0.95238em;
   }
 
-  p, ul, ol, dl {
+  p {
+    margin: 0 0 1.42857em;
+  }
+
+  ul, ol, dl {
     margin: 1.42857em 0;
   }
 

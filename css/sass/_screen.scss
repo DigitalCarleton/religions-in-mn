@@ -54,8 +54,12 @@ body {
         font-size: 1.5 * $base-font-size;
         @include trailer(1, 1.5 * $base-font-size);
     }
+
+    p {
+        margin: 0 0 rhythm(1);
+    }
     
-    p, ul, ol, dl {
+    ul, ol, dl {
         margin: rhythm(1) 0;
     }
 
