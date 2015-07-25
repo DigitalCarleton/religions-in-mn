@@ -37,4 +37,25 @@ if (!SantaFe) {
         });
     }
 
+        SantaFe.exhibitPages = function () {
+        var $exhibitpages   = $("#exhibit-pages"),
+            $window = $(window),
+            offset  = $exhibitpages.offset(),
+            topPadding = 20,
+            $contentDiv = $("#content");
+        if (document.getElementById("exhibit-pages")) {
+            $window.scroll(function () {
+                if($window.scrollTop() > offset.top && $window.width() > 767 && ($window.height() - topPadding - 85) >  $exhibitpages.height()) {
+                    $exhibitpages.stop().animate({
+                        marginTop: $window.scrollTop() - offset.top + topPadding
+                        });
+                } else {
+                    $exhibitpages.stop().animate({
+                        marginTop: 0
+                    });
+                }
+            });
+        }
+    };
+
 })(jQuery);

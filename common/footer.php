@@ -29,6 +29,7 @@ jQuery(document).ready(function () {
     Omeka.skipNav();
     Omeka.megaMenu();
     SantaFe.mobileSelectNav();
+    SantaFe.exhibitPages();
 });
 </script>
 
