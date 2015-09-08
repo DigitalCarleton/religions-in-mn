@@ -1,5 +1,5 @@
 <?php
-$title = __('Browse Exhibits');
+$title = __('Browse Sites');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 ?>
 <h1><?php echo $title; ?> <?php echo __('(%s total)', $total_results); ?></h1>
