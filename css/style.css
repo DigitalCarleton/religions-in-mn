@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -405,17 +406,21 @@ th {
   }
 
   body {
-    font: 14px Verdana, Arial, sans-serif;
+    font: 14px ‘Merriweather’, Georgia, serif;
     line-height: 20px;
     color: #222;
-    background-color: #D5D2B8;
+    background-color: #00828C;
   }
 
   #wrap {
-    border-top: 2.85714em solid #868D4A;
+    border-top: 2.85714em solid #F25438;
   }
 
   /* -- Headings -- */
+  #site-title, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
   #site-title {
     width: 100%;
     color: #fafafa;
@@ -432,12 +437,12 @@ th {
 
   h1, h2, h3, h4 {
     margin: 0;
+    color: #666;
   }
 
   h1 {
     font-size: 31.5px;
     line-height: 40px;
-    color: #868D4A;
     margin-bottom: 0.63492em;
     font-weight: normal;
     word-wrap: break-word;
@@ -473,11 +478,12 @@ th {
 
   /* -- Links -- */
   a {
-    color: #868D4A;
+    color: #f25438;
     text-decoration: none;
   }
 
   a:hover {
+    color: rgba(242, 84, 56, 0.75);
     text-decoration: underline;
   }
 
@@ -500,7 +506,7 @@ th {
   input[type="submit"],
   .button,
   button {
-    background-color: #868D4A;
+    background-color: #F25438;
     color: #fff;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -510,7 +516,7 @@ th {
   input[type="text"],
   input[type="password"],
   textarea {
-    border: 1px solid #d3d6bc;
+    border: 1px solid #E1E1E1;
   }
 
   input[type="radio"] {
@@ -528,7 +534,7 @@ th {
     height: 30px;
     line-height: 30px;
     font-size: 14px;
-    border: 1px solid #d3d6bc;
+    border: 1px solid #E1E1E1;
   }
 
   /* -- Table -- */
@@ -537,26 +543,26 @@ th {
   }
 
   tr:first-of-type > * {
-    border-color: #d3d6bc;
+    border-color: #E1E1E1;
     border-top-width: 0.07143em;
     border-top-style: solid;
     padding-top: 0.64286em;
   }
 
   th, td {
-    border-color: #d3d6bc;
-    border-left: 1px solid #d3d6bc;
+    border-color: #E1E1E1;
+    border-left: 1px solid #E1E1E1;
     padding: 0.71429em;
     border-bottom-width: 0.07143em;
     border-bottom-style: solid;
     padding-bottom: 0.64286em;
   }
   th:last-of-type, td:last-of-type {
-    border-right: 1px solid #d3d6bc;
+    border-right: 1px solid #E1E1E1;
   }
 
   th {
-    background-color: #d3d6bc;
+    background-color: #E1E1E1;
   }
 
   /* -- Misc Classes */
@@ -615,7 +621,7 @@ th {
     float: left;
   }
   .pagination li:last-of-type {
-    border-right: 1px solid #d3d6bc;
+    border-right: 1px solid #E1E1E1;
   }
 
   .page-input,
@@ -627,7 +633,7 @@ th {
 
   .pagination_next a,
   .pagination_previous a {
-    background-color: #d3d6bc;
+    background-color: #E1E1E1;
     text-decoration: none;
     text-indent: -9999px;
     position: relative;
@@ -655,7 +661,7 @@ th {
   }
 
   .page-input {
-    border: 1px solid #d3d6bc;
+    border: 1px solid #E1E1E1;
     padding: 0.71429em;
   }
   .page-input input[type=text] {
@@ -663,7 +669,7 @@ th {
   }
 
   #sort-links {
-    border-color: #d3d6bc;
+    border-color: #E1E1E1;
     border-bottom-width: 0.07143em;
     border-bottom-style: solid;
     padding-bottom: -0.07143em;
@@ -705,7 +711,7 @@ th {
   .item,
   .collection,
   .exhibit {
-    border-color: #d3d6bc;
+    border-color: #E1E1E1;
     border-bottom-width: 0.07143em;
     border-bottom-style: solid;
     padding-bottom: 1.35714em;
@@ -772,7 +778,7 @@ th {
   }
   .hTagcloud li a {
     display: inline-block;
-    background-color: #d3d6bc;
+    background-color: #E1E1E1;
     padding: 0.71429em;
   }
 
@@ -821,11 +827,10 @@ th {
     border-bottom-width: 0.14286em;
     border-bottom-style: solid;
     padding-bottom: -0.14286em;
-    background: #444;
   }
 
   #header .center-div {
-    background-color: #333;
+    background-color: #666;
     border-color: #fff;
     border-left-width: 0.14286em;
     border-left-style: solid;
@@ -1036,7 +1041,7 @@ th {
 
   .secondary-nav,
   #secondary-nav {
-    border-color: #d3d6bc;
+    border-color: #E1E1E1;
     border-bottom-width: 0.07143em;
     border-bottom-style: solid;
     padding-bottom: 0.64286em;
@@ -1063,7 +1068,7 @@ th {
   /* Home Page */
   .featured,
   #featured-exhibit {
-    border-color: #d3d6bc;
+    border-color: #E1E1E1;
     border-bottom-width: 0.07143em;
     border-bottom-style: solid;
     padding-bottom: 1.35714em;
@@ -1085,11 +1090,11 @@ th {
 
   #recent-items {
     border: none;
-    background-color: #d3d6bc;
+    background-color: #E1E1E1;
     padding: 1.42857em 1.69492%;
   }
   #recent-items .item, #recent-items .item img {
-    border-color: #868D4A;
+    border-color: #F25438;
   }
 
   #intro {
@@ -1114,7 +1119,7 @@ th {
   /* Search Results */
   #item-filters,
   #search-filters {
-    border-color: #d3d6bc;
+    border-color: #E1E1E1;
     border-bottom-width: 0.07143em;
     border-bottom-style: solid;
     padding-bottom: 0.64286em;
@@ -1128,7 +1133,7 @@ th {
   #item-filters li,
   #search-filters li {
     display: inline-block;
-    background-color: #d3d6bc;
+    background-color: #E1E1E1;
     padding: 0.35714em;
   }
   #item-filters ul ul,
@@ -1193,7 +1198,8 @@ th {
   }
 
   .exhibits.summary #primary,
-  .exhibits #content > h1:first-of-type,
+  .exhibits.show #content > h1:first-of-type,
+  .exhibits.summary #content > h1:first-of-type,
   #exhibit-blocks,
   #exhibit-page-navigation {
     width: 74.57627%;
@@ -1206,9 +1212,9 @@ th {
   #exhibit-pages {
     width: 23.72881%;
     overflow: hidden;
-    background-color: #f2f3eb;
+    background-color: white;
     margin: 0;
-    border-color: #868D4A;
+    border-color: #F25438;
     padding: 0 1.26582%;
     border-top-width: 0.35714em;
     border-top-style: solid;
@@ -1250,7 +1256,7 @@ th {
     border-bottom-width: 0.05714em;
     border-bottom-style: solid;
     padding-bottom: 0.8em;
-    border-color: #868D4A;
+    border-color: #F25438;
   }
   #exhibit-pages > ul {
     margin: 0;
@@ -1276,7 +1282,7 @@ th {
     width: 100%;
     bottom: 0;
     left: 0;
-    background-color: #d3d6bc;
+    background-color: #E1E1E1;
   }
 
   .exhibit-block > *:last-child {
@@ -1300,7 +1306,7 @@ th {
     border-width: 0.14286em;
     border-style: solid;
     padding: 0.21429em;
-    background-color: #868D4A;
+    background-color: #F25438;
     overflow: hidden;
     padding: 0 1.69492%;
   }
@@ -1406,7 +1412,6 @@ th {
     padding: 0;
     z-index: 15;
     width: 100%;
-    background-color: #000;
     float: left;
   }
   #primary-nav .nav-item {
@@ -1418,7 +1423,7 @@ th {
   #primary-nav .nav-item > a {
     position: relative;
     margin: 0 0 -1px 0;
-    color: #868D4A;
+    color: #fff;
     display: block;
     float: left;
     padding: 10px;

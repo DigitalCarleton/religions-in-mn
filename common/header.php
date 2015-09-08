@@ -21,6 +21,8 @@
     <?php fire_plugin_hook('public_head',array('view'=>$this)); ?>
 
     <!-- Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700' rel='stylesheet' type='text/css'>
     <?php
     queue_css_file(array('iconfonts', 'style'));
     queue_css_file('bigfoot-number');

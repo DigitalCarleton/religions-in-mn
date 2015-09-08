@@ -4,10 +4,10 @@
 }
 
 body {
-    font: $base-font-size Verdana, Arial, sans-serif; 
+    font: $base-font-size ‘Merriweather’, Georgia, serif; 
     line-height: $base-line-height;
     color:#222; 
-    background-color:#D5D2B8;
+    background-color:#00828C;
 }
 
 #wrap {
@@ -15,6 +15,9 @@ body {
 }
 
     /* -- Headings -- */
+    #site-title, h1, h2, h3, h4, h5, h6 {
+    font-family:"Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
     #site-title {
         width: 100%;
         color: #fafafa;
@@ -32,12 +35,12 @@ body {
     
     h1, h2, h3, h4 {
         margin: 0;
+        color:#666
     }
 
     h1 {
         font-size: 2.25 * $base-font-size;
         line-height: 2 * $base-line-height;
-        color: #868D4A;
         @include trailer(1, 2.25 * $base-font-size);
         font-weight: normal;
         word-wrap: break-word;
@@ -73,11 +76,12 @@ body {
 
     /* -- Links -- */
     a {
-        color:#868D4A;
+        color:rgb(242,84,56);
         text-decoration:none;
     }
 
     a:hover {
+        color:rgba(242,84,56,.75);
         text-decoration:underline;
     }
     
@@ -376,11 +380,11 @@ body {
 #header {
     border-color: #fff;
     @include horizontal-borders(2px, 0, $base-font-size, solid);
-    background:#444;
+    //background:#00828C;
 }
 
 #header .center-div {
-    background-color:#333;
+    background-color:#666;
     border-color: #fff;
     @include apply-side-rhythm-border('left', 2px, 0, $base-font-size, solid);
     @include apply-side-rhythm-border('right', 2px, 0, $base-font-size, solid);
@@ -718,7 +722,8 @@ body {
     
     
     .exhibits.summary #primary,
-    .exhibits #content > h1:first-of-type,
+    .exhibits.show #content > h1:first-of-type,
+    .exhibits.summary #content > h1:first-of-type,
     #exhibit-blocks,
     #exhibit-page-navigation {
         @include span-columns(9 omega);
