@@ -585,6 +585,10 @@ th {
     padding: 0 0px 0 10px;
   }
 
+  .exhibit.browse .description img {
+    display: none;
+  }
+
   .image img {
     height: 5em;
     width: auto;
