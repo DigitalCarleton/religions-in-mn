@@ -10,6 +10,7 @@ div#search-container {
     clear: none;
     @include leader(1.25);
     padding-right: $gutter-width;
+    margin-top:0.5em;
 }
 
 .center-div {
@@ -65,7 +66,7 @@ div#search-container {
         margin: 0;
         padding: 0;
         z-index: 15;
-        width: 100%;
+        width: 75%;
         float: left;
     }
 

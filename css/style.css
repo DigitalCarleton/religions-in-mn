@@ -413,7 +413,7 @@ th {
   }
 
   #wrap {
-    border-top: 2.85714em solid #F25438;
+    border-top: 2.85714em solid #00d1e1;
   }
 
   /* -- Headings -- */
@@ -478,12 +478,12 @@ th {
 
   /* -- Links -- */
   a {
-    color: #f25438;
+    color: #0975ac;
     text-decoration: none;
   }
 
   a:hover {
-    color: rgba(242, 84, 56, 0.75);
+    color: rgba(9, 117, 172, 0.75);
     text-decoration: underline;
   }
 
@@ -506,7 +506,7 @@ th {
   input[type="submit"],
   .button,
   button {
-    background-color: #F25438;
+    background-color: #00d1e1;
     color: #fff;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -858,7 +858,7 @@ th {
   }
 
   #search-container {
-    padding: 0 1em 1.42857em;
+    padding: 0;
   }
 
   #search-form input[type="text"] {
@@ -1098,7 +1098,7 @@ th {
     padding: 1.42857em 1.69492%;
   }
   #recent-items .item, #recent-items .item img {
-    border-color: #F25438;
+    border-color: rgba(0, 0, 0, 0.2);
   }
 
   #intro {
@@ -1218,7 +1218,7 @@ th {
     overflow: hidden;
     background-color: white;
     margin: 0;
-    border-color: #F25438;
+    border-color: #00d1e1;
     padding: 0 1.26582%;
     border-top-width: 0.35714em;
     border-top-style: solid;
@@ -1260,7 +1260,7 @@ th {
     border-bottom-width: 0.05714em;
     border-bottom-style: solid;
     padding-bottom: 0.8em;
-    border-color: #F25438;
+    border-color: #00d1e1;
   }
   #exhibit-pages > ul {
     margin: 0;
@@ -1310,9 +1310,9 @@ th {
     border-width: 0.14286em;
     border-style: solid;
     padding: 0.21429em;
-    background-color: #F25438;
+    background-color: #00d1e1;
     overflow: hidden;
-    padding: 0 1.69492%;
+    padding: 0.5em 1.69492%;
   }
 
   #footer li {
@@ -1324,11 +1324,8 @@ th {
   }
 
   #footer a {
-    color: #D5D2B8;
-  }
-
-  #footer p {
-    color: #D5D2B8;
+    color: #222;
+    text-decoration: underline;
   }
 
   /* == Recaptcha == */
@@ -1353,6 +1350,7 @@ th {
     clear: none;
     margin-top: 1.78571em;
     padding-right: 1em;
+    margin-top: 0.5em;
   }
 
   .center-div {
@@ -1415,7 +1413,7 @@ th {
     margin: 0;
     padding: 0;
     z-index: 15;
-    width: 100%;
+    width: 75%;
     float: left;
   }
   #primary-nav .nav-item {

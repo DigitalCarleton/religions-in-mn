@@ -30,6 +30,14 @@ jQuery(document).ready(function () {
     Omeka.megaMenu();
     SantaFe.mobileSelectNav();
     SantaFe.exhibitPages();
+
+    jQuery('img').click(function() {
+    jQuery(this).colorbox({
+        href: jQuery(this).attr('src')
+    });
+    });
+
+
 });
 </script>
 

@@ -11,7 +11,7 @@ body {
 }
 
 #wrap {
-    border-top: rhythm(2) solid $olive;
+    border-top: rhythm(2) solid $sky;
 }
 
     /* -- Headings -- */
@@ -76,12 +76,12 @@ body {
 
     /* -- Links -- */
     a {
-        color:rgb(242,84,56);
+        color:$links;
         text-decoration:none;
     }
 
     a:hover {
-        color:rgba(242,84,56,.75);
+        color:$links-light;
         text-decoration:underline;
     }
     
@@ -105,7 +105,7 @@ body {
     input[type="submit"],
     .button,
     button {
-        background-color: $olive;
+        background-color: $sky;
         color: #fff;
         @include appearance(none);
         line-height: rhythm(1.5);
@@ -114,7 +114,7 @@ body {
     input[type="text"],
     input[type="password"],
     textarea {
-        border: 1px solid $sand;
+        border: 1px solid $slate;
     }
     
     input[type="radio"] {
@@ -132,7 +132,7 @@ body {
         height: 1.5 * $base-line-height;
         line-height: 1.5 * $base-line-height;
         font-size: $base-font-size;
-        border: 1px solid $sand;
+        border: 1px solid $slate;
     }
     
     /* -- Table -- */
@@ -142,23 +142,23 @@ body {
     }
     
     tr:first-of-type > * {
-        border-color: $sand;
+        border-color: $slate;
         @include leading-border(1px, .5, $base-font-size, solid);
     }
     
     th,td {
-        border-color: $sand;
-        border-left: 1px solid $sand;
+        border-color: $slate;
+        border-left: 1px solid $slate;
         padding: rhythm(.5);
         @include trailing-border(1px, .5, $base-font-size, solid);
         
         &:last-of-type {
-            border-right: 1px solid $sand;
+            border-right: 1px solid $slate;
         }
     }
     
     th {
-        background-color: $sand;
+        background-color: $slate;
     }
 
     /* -- Misc Classes */
@@ -208,7 +208,7 @@ body {
         float: left;
         
         &:last-of-type {
-            border-right: 1px solid $sand;
+            border-right: 1px solid $slate;
         }
     }
     
@@ -221,7 +221,7 @@ body {
     
     .pagination_next a,
     .pagination_previous a {
-        background-color: $sand;
+        background-color: $slate;
         text-decoration: none;
         text-indent: -9999px;
         position: relative;
@@ -250,7 +250,7 @@ body {
     }
     
     .page-input {
-        border: 1px solid $sand;
+        border: 1px solid $slate;
         padding: rhythm(.5);
         
         input[type=text] {
@@ -259,7 +259,7 @@ body {
     }
 
     #sort-links {
-        border-color: $sand;
+        border-color: $slate;
         @include trailing-border(1px, 0, $base-font-size, solid);
         @include trailer();
         
@@ -302,7 +302,7 @@ body {
         .item,
         .collection,
         .exhibit {
-            border-color: $sand;
+            border-color: $slate;
             @include trailing-border(1px, 1, $base-font-size, solid);
             @include trailer();
             overflow: hidden;
@@ -363,7 +363,7 @@ body {
             
             a {
                 display: inline-block;
-                background-color: $sand;
+                background-color: $slate;
                 padding: rhythm(.5);
             }
         }
@@ -407,7 +407,7 @@ body {
 }
 
 #search-container {
-    padding: 0 $gutter-width rhythm();
+    padding: 0;
 }
 
 #search-form {
@@ -568,7 +568,7 @@ body {
 
     .secondary-nav,
     #secondary-nav {
-        border-color: $sand;
+        border-color: $slate;
         @include trailing-border(1px, .5, $base-font-size, solid);
         width:100%;
         margin: rhythm(-.5) 0 rhythm(.5);
@@ -594,7 +594,7 @@ body {
 
     .featured,
     #featured-exhibit {
-        border-color: $sand;
+        border-color: $slate;
         @include trailing-border(1px, 1, $base-font-size, solid);
         @include trailer();
         
@@ -612,11 +612,11 @@ body {
 
     #recent-items {
         border:none;
-        background-color: $sand;
+        background-color: $slate;
         padding: rhythm(1) gutter();
         
         .item, .item img {
-            border-color: $olive;
+            border-color: rgba(0,0,0,.2);
         }
     }
 
@@ -640,7 +640,7 @@ body {
     /* Search Results */
     #item-filters,
     #search-filters {
-        border-color: $sand;
+        border-color: $slate;
         @include trailing-border(1px, .5, $base-font-size, solid);
 
         ul {
@@ -651,7 +651,7 @@ body {
         
         li {
             display: inline-block;
-            background-color: $sand;
+            background-color: $slate;
             padding: rhythm(.25);
         }
         
@@ -734,9 +734,9 @@ body {
     #exhibit-pages {
         width: columns(3);
         overflow: hidden;
-        background-color: lighten($sand, 15%);
+        background-color: lighten($slate, 15%);
         margin: 0;
-        border-color: $olive;
+        border-color: $sky;
         padding: 0 gutter(16);
         @include leading-border(5px, 1, $base-font-size, solid);
         @include trailing-border(1px, 1, $base-font-size, solid);
@@ -770,7 +770,7 @@ body {
             @include trailer(1, 1.25 * $base-font-size);
             @include bleed(1 of 16);
             @include trailing-border(1px, .75, 1.25 * $base-font-size, solid);
-            border-color: $olive;
+            border-color: $sky;
         }
         
         & > ul {
@@ -800,7 +800,7 @@ body {
         width: 100%;
         bottom: 0;
         left: 0;
-        background-color: $sand;
+        background-color: $slate;
     }
 
     // .exhibit-block {
@@ -827,14 +827,13 @@ body {
     clear:both;
     border-color: #fff;
     @include rhythm-borders(2px, .25, $base-font-size, solid);
-    background-color: $olive;
+    background-color: $sky;
     overflow:hidden;
-    padding: 0 gutter();
+    padding: 0.5em gutter();
 }
 #footer li {display:inline;}
 #footer .navigation li {margin-right:.5em}
-#footer a {color:#D5D2B8;}
-#footer p {color:#D5D2B8;}
+#footer a {color:#222;text-decoration:underline}
 
 /* == Recaptcha == */
 
