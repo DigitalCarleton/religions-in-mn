@@ -1,10 +1,10 @@
-if (!SantaFe) {
-    var SantaFe = {};
+if (!Religions) {
+    var Religions = {};
 }
 
 (function ($) {
     
-    SantaFe.mobileSelectNav = function () {
+    Religions.mobileSelectNav = function () {
         // Create the dropdown base
         $("<select class=\"mobile\" />").appendTo("#primary-nav");
         
@@ -37,7 +37,7 @@ if (!SantaFe) {
         });
     }
 
-        SantaFe.exhibitPages = function () {
+    Religions.exhibitPages = function () {
         var $exhibitpages   = $("#exhibit-pages"),
             $window = $(window),
             offset  = $exhibitpages.offset(),
@@ -57,5 +57,20 @@ if (!SantaFe) {
             });
         }
     };
+
+    Religions.lightbox = function () {
+        $('img').click(function() {
+            var baseUrl = $(this).attr('src');
+            console.log(baseUrl, "Hello, world!");
+            var directory = /files\/(\w*)/;
+            var fullsizeUrl = baseUrl.replace(directory, "files/fullsize");
+            console.log(fullsizeUrl, "Foo")
+
+            $(this).colorbox({
+                href: fullsizeUrl
+            });
+        });
+    }
+
 
 })(jQuery);

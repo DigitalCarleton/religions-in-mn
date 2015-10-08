@@ -28,16 +28,9 @@ jQuery(document).ready(function () {
     Omeka.showAdvancedForm();
     Omeka.skipNav();
     Omeka.megaMenu();
-    SantaFe.mobileSelectNav();
-    SantaFe.exhibitPages();
-
-    jQuery('img').click(function() {
-    jQuery(this).colorbox({
-        href: jQuery(this).attr('src')
-    });
-    });
-
-
+    Religions.mobileSelectNav();
+    Religions.exhibitPages();
+    Religions.lightbox();
 });
 </script>
 
