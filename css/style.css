@@ -1289,6 +1289,10 @@ th {
     background-color: #E1E1E1;
   }
 
+  .layout-file-text .exhibit-items {
+    max-width: 100%;
+  }
+
   .exhibit-block > *:last-child {
     margin-bottom: 0;
   }
