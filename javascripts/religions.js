@@ -59,15 +59,15 @@ if (!Religions) {
     };
 
     Religions.lightbox = function () {
-        $('img').click(function() {
+        $('#exhibit-blocks img').each(function() {
             var baseUrl = $(this).attr('src');
-            console.log(baseUrl, "Hello, world!");
             var directory = /files\/(\w*)/;
             var fullsizeUrl = baseUrl.replace(directory, "files/fullsize");
-            console.log(fullsizeUrl, "Foo")
 
             $(this).colorbox({
-                href: fullsizeUrl
+                href: fullsizeUrl,
+                height: "100%",
+                rel: 'gal'
             });
         });
     }
