@@ -74,6 +74,13 @@ body {
         font-weight:bold;
     }
 
+    .pull-quote {
+        font-size:1.25 * $base-font-size;
+        margin:.5rem 0 1rem 1rem;
+        font-variant: small-caps;
+        color:#00828C;
+    }
+
     /* -- Links -- */
     a {
         color:$links;
