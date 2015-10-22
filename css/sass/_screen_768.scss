@@ -86,13 +86,24 @@ div#search-container {
         display:block;
         float:left;
         padding:10px;
+        font-size:$base-font-size * 1.25;
+    }
+
+    .nav-item a:hover, .sub-nav a:hover {
+        text-decoration: none;
+        color:#00d1e1;
+    }
+
+    .sub-nav a:hover {
+        background: #f5f5f5;
+        color:#0975ac;
     }
 
     /* open state of first descendant link within a top level 
        navigation item */
     .nav-item > a.open {
-        background-color: #fff;
-        border: 1px solid #dedede;
+        // background-color: #fff;
+        // border: 1px solid #dedede;
         border-bottom: none;
         z-index: 1;
     }
@@ -101,13 +112,15 @@ div#search-container {
     .sub-nav {
         position: absolute;
         display: none;
-        top: rhythm(2.125);
+        top: rhythm(1.9);
         margin-top: -1px;
-        padding: 0.5em 1em;
+        padding: 0;
         border: 1px solid #dedede;
         border-top: 0;
         background-color: #fff;
         z-index: 2;
+        min-width: 150px;
+        font-size:$base-font-size * 1.25;
     }
 
     /* sub-navigation panel open state */
@@ -120,7 +133,7 @@ div#search-container {
         display: block;
         vertical-align: top;
         margin: 0 1em 0 0;
-        padding: 0 0 0 1em;
+        padding: 0;
     }
 
     /* list item within sub-navigation panel */
@@ -129,6 +142,7 @@ div#search-container {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        border-bottom:1px solid #f0f0f0;
     }
 
     .sub-nav a {

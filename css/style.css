@@ -1433,23 +1433,32 @@ th {
     display: block;
     float: left;
     padding: 10px;
+    font-size: 17.5px;
+  }
+  #primary-nav .nav-item a:hover, #primary-nav .sub-nav a:hover {
+    text-decoration: none;
+    color: #00d1e1;
+  }
+  #primary-nav .sub-nav a:hover {
+    background: #f5f5f5;
+    color: #0975ac;
   }
   #primary-nav .nav-item > a.open {
-    background-color: #fff;
-    border: 1px solid #dedede;
     border-bottom: none;
     z-index: 1;
   }
   #primary-nav .sub-nav {
     position: absolute;
     display: none;
-    top: 3.03571em;
+    top: 2.71429em;
     margin-top: -1px;
-    padding: 0.5em 1em;
+    padding: 0;
     border: 1px solid #dedede;
     border-top: 0;
     background-color: #fff;
     z-index: 2;
+    min-width: 150px;
+    font-size: 17.5px;
   }
   #primary-nav .sub-nav.open {
     display: block;
@@ -1458,13 +1467,14 @@ th {
     display: block;
     vertical-align: top;
     margin: 0 1em 0 0;
-    padding: 0 0 0 1em;
+    padding: 0;
   }
   #primary-nav .sub-nav li {
     display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid #f0f0f0;
   }
   #primary-nav .sub-nav a {
     padding: 0.71429em;
