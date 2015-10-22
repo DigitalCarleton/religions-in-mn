@@ -190,10 +190,18 @@ div#search-container {
     min-height:30px;
 }
 
-.featured,
-#featured-exhibit {
-    @include span-columns(8 omega, 12);
-    clear: right;
+#featured-exhibit-image {
+min-height: 350px;
+background-size: cover;
+overflow: hidden;
+background-position: center; 
+@include span-columns(8);
+}
+
+#featured-exhibit-image a {
+display: block;
+height: 350px;
+width:100%
 }
 
 #recent-items {

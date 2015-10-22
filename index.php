@@ -1,48 +1,23 @@
 <?php echo head(array('bodyclass'=>'home')); ?>
 
-<?php if (get_theme_option('Homepage Text')): ?>
-    <aside id="intro" role="introduction">
-<p><?php echo get_theme_option('Homepage Text'); ?></p>
-</aside>
-<?php endif; ?>
 
-<?php if (get_theme_option('Display Featured Item') !== '0'): ?>
-<!-- Featured Item -->
-<div id="featured-item" class="featured">
-    <h2><?php echo __('Featured Item'); ?></h2>
-    <?php echo random_featured_items(1); ?>
-</div><!--end featured-item-->
-<?php endif; ?>
 
-<?php if (get_theme_option('Display Featured Collection') !== '0'): ?>
-<!-- Featured Collection -->
-<div id="featured-collection" class="featured">
-    <h2><?php echo __('Featured Collection'); ?></h2>
-    <?php echo random_featured_collection(); ?>
-</div><!-- end featured collection -->
-<?php endif; ?>
-
-<?php if ((get_theme_option('Display Featured Exhibit') !== '0')
-        && plugin_is_active('ExhibitBuilder')
-        && function_exists('exhibit_builder_display_random_featured_exhibit')): ?>
+<?php if (plugin_is_active('ExhibitBuilder')): ?>
 <!-- Featured Exhibit -->
-<?php echo exhibit_builder_display_random_featured_exhibit(); ?>
-<?php endif; ?>
+<?php $featuredExhibit = exhibit_builder_random_featured_exhibit(1); ?>
+<div id="featured-exhibit">
+    <h3><?php echo exhibit_builder_link_to_exhibit($featuredExhibit); ?></h3>
+        <?php $file = $featuredExhibit->getFile(); ?>
+        <?php if ($file): ?>
+        <?php $exhibitImage = metadata($file, 'fullsize_uri'); ?>
+        <div id="featured-exhibit-image-container">
+            <div id="featured-exhibit-image" style="background-image:url(<?php echo $exhibitImage; ?>)"><?php echo exhibit_builder_link_to_exhibit($featuredExhibit,$text = ' '); ?></div>
+        </div>
 
-<?php
-$recentItems = get_theme_option('Homepage Recent Items');
-if ($recentItems === null || $recentItems === ''):
-    $recentItems = 3;
-else:
-    $recentItems = (int) $recentItems;
-endif;
-if ($recentItems):
-?>
-<div id="recent-items">
-    <h2><?php echo __('Recently Added Items'); ?></h2>
-    <?php echo recent_items($recentItems); ?>
-    <p class="view-items-link"><a href="<?php echo html_escape(url('items')); ?>"><?php echo __('View All Items'); ?></a></p>
-</div><!--end recent-items -->
+    <?php endif; ?>
+    <p><?php echo snippet_by_word_count(metadata($featuredExhibit, 'description', array('no_escape' => true)), 200); ?><?php echo exhibit_builder_link_to_exhibit($featuredExhibit,$text = 'Learn More&rarr;'); ?></p>
+</div>
+
 <?php endif; ?>
 
 <?php fire_plugin_hook('public_home', array('view' => $this)); ?>

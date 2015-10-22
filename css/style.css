@@ -1523,14 +1523,21 @@ th {
     min-height: 30px;
   }
 
-  .featured,
-  #featured-exhibit {
+  #featured-exhibit-image {
+    min-height: 350px;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
     width: 66.10169%;
-    float: right;
-    margin-right: 0;
-    *margin-left: -1em;
+    float: left;
+    margin-right: 1.69492%;
     display: inline;
-    clear: right;
+  }
+
+  #featured-exhibit-image a {
+    display: block;
+    height: 350px;
+    width: 100%;
   }
 
   #recent-items {
