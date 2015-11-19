@@ -30,7 +30,8 @@ jQuery(document).ready(function () {
     Omeka.megaMenu();
     Religions.mobileSelectNav();
     Religions.exhibitPages();
-    Religions.lightbox();
+    Religions.slider();
+    Religions.toggle();
 });
 </script>
 

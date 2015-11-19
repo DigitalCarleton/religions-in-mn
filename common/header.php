@@ -24,9 +24,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700' rel='stylesheet' type='text/css'>
     <?php
-    queue_css_file(array('iconfonts', 'style'));
+    queue_css_file(array('iconfonts', 'style', 'slider-pro.min'));
     queue_css_file('bigfoot-number');
-    queue_css_file('colorbox');;
     echo head_css();
     ?>
 
@@ -34,9 +33,10 @@
     <?php queue_js_file(array('vendor/jquery-accessibleMegaMenu', 'religions', 'globals')); ?>
     <?php queue_js_file('vendor/selectivizr', 'javascripts', array('conditional' => '(gte IE 6)&(lte IE 8)')); ?>
     <?php queue_js_file('vendor/respond'); ?>
-    <?php queue_js_file('vendors/jquery.colorbox-min'); ?>
     <?php queue_js_file('bigfoot'); ?>
+    <?php queue_js_file('jquery.sliderPro.min'); ?>
     <?php echo head_js(); ?>
+    
     <script type="text/javascript">
         var bigfoot = jQuery.bigfoot(
                 {

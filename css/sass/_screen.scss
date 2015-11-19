@@ -76,9 +76,26 @@ body {
 
     .pull-quote {
         font-size:1.25 * $base-font-size;
-        margin:.5rem 0 1rem 1rem;
+        margin:.5rem 0 1rem .5rem;
+        padding: 0.25rem 1.5rem;
         font-variant: small-caps;
-        color:#00828C;
+        color:#fff;
+        background-color:rgba(#00828C, .8);
+        position:relative;
+    }
+
+    .pull-quote:before {
+        content:"“" ;
+        font-size:2.5 * $base-font-size;
+        position:absolute;
+        margin:.5rem 0 0 -1rem;
+    }
+
+    .pull-quote:after {
+        content:"”";
+        font-size:2.5 * $base-font-size;
+        margin-top:.5rem;
+        position:absolute;
     }
 
     /* -- Links -- */
@@ -194,6 +211,11 @@ body {
         margin-left: 6px;
     }
 
+    .sp-layer p {
+        font-size:1.1rem;
+    }
+
+ 
     /* Navigation Classes*/
     ul.navigation, 
     ul.pagination, 
@@ -724,11 +746,27 @@ body {
     }
 
     /* Exhibits Pages */
+
+    h1 span.exhibit-page {
+        font-variant: small-caps;
+    }
     
     .browse .exhibit {
         clear: both;
     }
-    
+
+    .exhibit-page-text {
+        margin-top:20px;
+    }
+
+    .exhibit-item-caption {
+        font-size: .9 * $base-font-size;
+        font-style: italic;
+    }
+
+    .transcription {
+        display:none;
+    }
     
     .exhibits.summary #primary,
     .exhibits.show #content > h1:first-of-type,

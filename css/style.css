@@ -478,9 +478,26 @@ th {
 
   .pull-quote {
     font-size: 17.5px;
-    margin: .5rem 0 1rem 1rem;
+    margin: .5rem 0 1rem .5rem;
+    padding: 0.25rem 1.5rem;
     font-variant: small-caps;
-    color: #00828C;
+    color: #fff;
+    background-color: rgba(0, 130, 140, 0.8);
+    position: relative;
+  }
+
+  .pull-quote:before {
+    content: "“";
+    font-size: 35px;
+    position: absolute;
+    margin: .5rem 0 0 -1rem;
+  }
+
+  .pull-quote:after {
+    content: "”";
+    font-size: 35px;
+    margin-top: .5rem;
+    position: absolute;
   }
 
   /* -- Links -- */
@@ -610,6 +627,10 @@ th {
     -webkit-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
     box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
     margin-left: 6px;
+  }
+
+  .sp-layer p {
+    font-size: 1.1rem;
   }
 
   /* Navigation Classes*/
@@ -1204,8 +1225,25 @@ th {
   }
 
   /* Exhibits Pages */
+  h1 span.exhibit-page {
+    font-variant: small-caps;
+  }
+
   .browse .exhibit {
     clear: both;
+  }
+
+  .exhibit-page-text {
+    margin-top: 20px;
+  }
+
+  .exhibit-item-caption {
+    font-size: 12.6px;
+    font-style: italic;
+  }
+
+  .transcription {
+    display: none;
   }
 
   .exhibits.summary #primary,
@@ -1528,23 +1566,6 @@ th {
   /*Search Results */
   #footer {
     min-height: 30px;
-  }
-
-  #featured-exhibit-image {
-    min-height: 350px;
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
-    width: 66.10169%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
-  }
-
-  #featured-exhibit-image a {
-    display: block;
-    height: 350px;
-    width: 100%;
   }
 
   #recent-items {

@@ -72,5 +72,24 @@ if (!Religions) {
         });
     }
 
+    Religions.slider = function() {
+        $( document ).ready(function( $ ) {
+            $( '.slider-pro' ).sliderPro({
+                width:'100%',
+                arrows: true,
+                autoHeight: true,
+                buttons:false,
+                autoplay:false,
+            });
+    });
+    }
+
+    Religions.toggle = function() {
+        $( ".show-transcription" ).click(function(e) {
+            e.preventDefault();
+          $( ".transcription" ).toggle( "blind", 300 );
+        });
+    }
+
 
 })(jQuery);
