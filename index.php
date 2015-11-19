@@ -19,10 +19,13 @@
                     </div>
                 <?php endif; ?>
 
-                <div class="sp-layer sp-black sp-padding" data-position="bottomLeft" data-width="100%">
-                    <h3><?php echo exhibit_builder_link_to_exhibit($featuredExhibit); ?></h3>
+                <div class="sp-layer sp-black sp-padding" data-position="topRight" data-width="30%" data-height="99%">
+                    <div class="featured-text">
+                        <h3><?php echo exhibit_builder_link_to_exhibit($featuredExhibit); ?></h3>
 
                     <p><?php echo snippet_by_word_count(metadata($featuredExhibit, 'description', array('no_escape' => true)), 200); ?><?php echo exhibit_builder_link_to_exhibit($featuredExhibit,$text = ' Learn More&rarr;'); ?></p>
+                    </div>
+                    
                 </div>
 
             </div>

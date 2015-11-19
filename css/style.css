@@ -1099,26 +1099,8 @@ th {
   }
 
   /* Home Page */
-  .featured,
-  #featured-exhibit {
-    border-color: #E1E1E1;
-    border-bottom-width: 0.07143em;
-    border-bottom-style: solid;
-    padding-bottom: 1.35714em;
-    margin-bottom: 1.42857em;
-  }
-  .featured *:last-child,
-  #featured-exhibit *:last-child {
-    margin-bottom: 0em;
-  }
-
-  .featured .record,
-  #featured-exhibit .exhibit {
-    border-bottom-width: 0em;
-    border-bottom-style: solid;
-    padding-bottom: 0em;
-    padding: 0;
-    overflow: visible;
+  .featured-text {
+    padding: 20px 5px 0;
   }
 
   #recent-items {

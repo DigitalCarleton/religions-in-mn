@@ -622,22 +622,26 @@ body {
 
     /* Home Page */
 
-    .featured,
-    #featured-exhibit {
-        border-color: $slate;
-        @include trailing-border(1px, 1, $base-font-size, solid);
-        @include trailer();
+    // .featured,
+    // #featured-exhibit {
+    //     border-color: $slate;
+    //     @include trailing-border(1px, 1, $base-font-size, solid);
+    //     @include trailer();
         
-        *:last-child {
-            @include trailer(0);
-        }
-    }
+    //     *:last-child {
+    //         @include trailer(0);
+    //     }
+    // }
     
-    .featured .record,
-    #featured-exhibit .exhibit {
-        @include trailing-border(0px, 0, $base-font-size, solid);
-        padding: 0;
-        overflow: visible;
+    // .featured .record,
+    // #featured-exhibit .exhibit {
+    //     @include trailing-border(0px, 0, $base-font-size, solid);
+    //     padding: 0;
+    //     overflow: visible;
+    // }
+
+    .featured-text {
+        padding:20px 5px 0
     }
 
     #recent-items {
