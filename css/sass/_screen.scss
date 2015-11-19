@@ -15,7 +15,7 @@ body {
 }
 
     /* -- Headings -- */
-    #site-title, h1, h2, h3, h4, h5, h6 {
+    #site-title, h1, h2, h3, h4, h5, h6, .pull-quote, #primary-nav {
     font-family:"Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     #site-title {
@@ -76,9 +76,10 @@ body {
     }
 
     .pull-quote {
-        font-size:1.75 * $base-font-size;
+        font-size:2.5 * $base-font-size;
+        line-height:2.5 * $base-font-size;
         margin:.5rem 0 1rem .5rem;
-        padding: 0.25rem 1.5rem;
+        padding: 2rem 2rem;
         font-variant: small-caps;
         color:#fff;
         background-color:rgba(#00828C, .8);
@@ -586,6 +587,7 @@ body {
         border-color: #fff;
         padding: rhythm() $gutter-width;
         @include trailing-border(2px, 0, $base-font-size, solid);
+        font-variant:small-caps;
         
         ul {
             display:none

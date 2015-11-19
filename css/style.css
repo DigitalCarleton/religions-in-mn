@@ -417,7 +417,7 @@ th {
   }
 
   /* -- Headings -- */
-  #site-title, h1, h2, h3, h4, h5, h6 {
+  #site-title, h1, h2, h3, h4, h5, h6, .pull-quote, #primary-nav {
     font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
@@ -478,9 +478,10 @@ th {
   }
 
   .pull-quote {
-    font-size: 24.5px;
+    font-size: 35px;
+    line-height: 35px;
     margin: .5rem 0 1rem .5rem;
-    padding: 0.25rem 1.5rem;
+    padding: 2rem 2rem;
     font-variant: small-caps;
     color: #fff;
     background-color: rgba(0, 130, 140, 0.8);
@@ -1058,6 +1059,7 @@ th {
     border-bottom-width: 0.14286em;
     border-bottom-style: solid;
     padding-bottom: -0.14286em;
+    font-variant: small-caps;
   }
   #primary-nav:after {
     content: "";
