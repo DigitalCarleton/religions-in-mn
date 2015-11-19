@@ -1071,6 +1071,9 @@ th {
     width: 100%;
     display: block;
   }
+  #primary-nav .active {
+    font-weight: normal;
+  }
 
   .secondary-nav,
   #secondary-nav {
