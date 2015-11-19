@@ -427,6 +427,7 @@ th {
     text-align: center;
     padding: 0.71429em 0;
     padding-left: 1em;
+    font-variant: small-caps;
   }
   #site-title a {
     color: #fafafa;
@@ -477,7 +478,7 @@ th {
   }
 
   .pull-quote {
-    font-size: 17.5px;
+    font-size: 24.5px;
     margin: .5rem 0 1rem .5rem;
     padding: 0.25rem 1.5rem;
     font-variant: small-caps;
@@ -488,15 +489,15 @@ th {
 
   .pull-quote:before {
     content: "“";
-    font-size: 35px;
+    font-size: 42px;
     position: absolute;
-    margin: .5rem 0 0 -1rem;
+    margin: .5rem 0 0 -1.2rem;
   }
 
   .pull-quote:after {
-    content: "”";
-    font-size: 35px;
-    margin-top: .5rem;
+    content: " ”";
+    font-size: 42px;
+    margin: .65rem 0 0 .2rem;
     position: absolute;
   }
 
@@ -1306,6 +1307,7 @@ th {
     border-bottom-style: solid;
     padding-bottom: 0.8em;
     border-color: #00d1e1;
+    font-variant: small-caps;
   }
   #exhibit-pages > ul {
     margin: 0;
@@ -1332,10 +1334,6 @@ th {
     bottom: 0;
     left: 0;
     background-color: #E1E1E1;
-  }
-
-  .layout-file-text .exhibit-items {
-    max-width: 100%;
   }
 
   .exhibit-block > *:last-child {

@@ -24,6 +24,7 @@ body {
         text-align: center;
         padding: rhythm(1, 2 * $base-font-size) 0;
         padding-left: $gutter-width;
+        font-variant:small-caps;
         
         a {
             color: #fafafa;
@@ -75,7 +76,7 @@ body {
     }
 
     .pull-quote {
-        font-size:1.25 * $base-font-size;
+        font-size:1.75 * $base-font-size;
         margin:.5rem 0 1rem .5rem;
         padding: 0.25rem 1.5rem;
         font-variant: small-caps;
@@ -86,15 +87,15 @@ body {
 
     .pull-quote:before {
         content:"“" ;
-        font-size:2.5 * $base-font-size;
+        font-size:3 * $base-font-size;
         position:absolute;
-        margin:.5rem 0 0 -1rem;
+        margin:.5rem 0 0 -1.2rem;
     }
 
     .pull-quote:after {
-        content:"”";
-        font-size:2.5 * $base-font-size;
-        margin-top:.5rem;
+        content:" ”";
+        font-size:3 * $base-font-size;
+        margin:.65rem 0 0 .2rem;
         position:absolute;
     }
 
@@ -816,6 +817,7 @@ body {
             @include bleed(1 of 16);
             @include trailing-border(1px, .75, 1.25 * $base-font-size, solid);
             border-color: $sky;
+            font-variant:small-caps;
         }
         
         & > ul {
@@ -852,9 +854,9 @@ body {
     //     overflow: hidden;
     // }
     
-    .layout-file-text .exhibit-items {
-        max-width:100%;
-    }
+    // .layout-file-text .exhibit-items {
+    //     max-width:100%;
+    // }
     
     .exhibit-block > *:last-child {
         margin-bottom: 0;
