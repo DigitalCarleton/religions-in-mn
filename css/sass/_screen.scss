@@ -213,9 +213,6 @@ body {
         margin-left: 6px;
     }
 
-    .sp-layer p {
-        font-size:1.1rem;
-    }
 
  
     /* Navigation Classes*/
@@ -760,7 +757,20 @@ body {
     h1 span.exhibit-page {
         font-variant: small-caps;
     }
-    
+
+    .caption-title {
+        font-size:1.5 * $base-font-size;
+
+        a {
+            margin-bottom: 10px;
+        }
+    }
+
+    .sp-layer p {
+        font-size:1 * $base-font-size;
+        margin-bottom: 5px;
+    }
+
     .browse .exhibit {
         clear: both;
     }

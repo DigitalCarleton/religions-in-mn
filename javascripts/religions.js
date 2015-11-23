@@ -77,7 +77,8 @@ if (!Religions) {
             $( '.slider-pro' ).sliderPro({
                 width:'100%',
                 arrows: true,
-                autoHeight: true,
+                height:400,
+                // autoHeight: true,
                 buttons:false,
                 autoplay:false,
             });

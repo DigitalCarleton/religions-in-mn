@@ -15,7 +15,7 @@
                 <?php if ($file): ?>
                     <?php $exhibitImage = metadata($file, 'fullsize_uri'); ?>
                     <div id="featured-exhibit-image-container">
-                        <img src="<?php echo $exhibitImage; ?>" alt="featured Exhibit Image" />
+                        <img class="sp-image" src="<?php echo $exhibitImage; ?>" alt="featured Exhibit Image" />
                     </div>
                 <?php endif; ?>
 

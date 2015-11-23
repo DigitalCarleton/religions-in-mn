@@ -631,10 +631,6 @@ th {
     margin-left: 6px;
   }
 
-  .sp-layer p {
-    font-size: 1.1rem;
-  }
-
   /* Navigation Classes*/
   ul.navigation,
   ul.pagination,
@@ -1215,6 +1211,18 @@ th {
   /* Exhibits Pages */
   h1 span.exhibit-page {
     font-variant: small-caps;
+  }
+
+  .caption-title {
+    font-size: 21px;
+  }
+  .caption-title a {
+    margin-bottom: 10px;
+  }
+
+  .sp-layer p {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 
   .browse .exhibit {
