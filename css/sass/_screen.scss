@@ -12,6 +12,7 @@ body {
 
 #wrap {
     border-top: rhythm(2) solid $sky;
+    background:url(images/sidebanner.png) top left no-repeat;
 }
 
     /* -- Headings -- */
@@ -25,14 +26,37 @@ body {
         padding: rhythm(1, 2 * $base-font-size) 0;
         padding-left: $gutter-width;
         font-variant:small-caps;
-        
+        position:relative;  
+        background:#777;      
         a {
             color: #fafafa;
             text-decoration: none;
             font-size: 2 * $base-font-size;
             line-height: 2 * $base-line-height;
+            z-index: 2;
+            position: relative;
         }
     }
+
+    #site-title:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
     
     h1, h2, h3, h4 {
         margin: 0;
@@ -362,7 +386,7 @@ body {
         }
         
         #itemfiles .item-file img {
-            height: rhythm(6);
+            width:100%;
         }
         
         .files .item-file img {
@@ -598,6 +622,27 @@ body {
         }
     }
 
+    #exhibit-pages {
+        clear:both;
+        @include pie-clearfix;
+        overflow: hidden;
+        border-color: #fff;
+        padding: rhythm() $gutter-width;
+        @include trailing-border(2px, 0, $base-font-size, solid);
+        font-variant:small-caps;
+        
+        ul, h4 {
+            display:none
+        }
+        select {
+            width: 100%;
+            display:block;
+        }
+        .active {
+            font-weight:normal;
+        }
+    }
+
     .secondary-nav,
     #secondary-nav {
         border-color: $slate;
@@ -771,6 +816,10 @@ body {
         margin-bottom: 5px;
     }
 
+    .sp-layer img {
+        width:100%;
+    }
+
     .browse .exhibit {
         clear: both;
     }
@@ -788,70 +837,13 @@ body {
         display:none;
     }
     
-    .exhibits.summary #primary,
-    .exhibits.show #content > h1:first-of-type,
-    .exhibits.summary #content > h1:first-of-type,
-    #exhibit-blocks,
-    #exhibit-page-navigation {
-        @include span-columns(9 omega);
+
+
+    #exhibit-pages, #exhibit-blocks{
+        word-break: break-all;
     }
 
-    #exhibit-pages {
-        width: columns(3);
-        overflow: hidden;
-        background-color: lighten($slate, 15%);
-        margin: 0;
-        border-color: $sky;
-        padding: 0 gutter(16);
-        @include leading-border(5px, 1, $base-font-size, solid);
-        @include trailing-border(1px, 1, $base-font-size, solid);
-        
-        
-        & ~ * {
-            @include span-columns(9 omega);
-            clear: right;
-        }
-        
-        ul ul,
-        .child-pages {
-            margin: 0;
-            overflow: hidden;
-            padding:0 0 0 gutter(2);
-            border-left:1px solid #686C42;
-        }
-        
-        .current ul {
-            font-weight: normal;
-        }
-        
-        li {
-            list-style-type: none;
-            float: none;
-            @include padding-leader(.5);
-        }
 
-        & > h4 {
-            font-size: 1.25 * $base-font-size;
-            @include trailer(1, 1.25 * $base-font-size);
-            @include bleed(1 of 16);
-            @include trailing-border(1px, .75, 1.25 * $base-font-size, solid);
-            border-color: $sky;
-            font-variant:small-caps;
-        }
-        
-        & > ul {
-            margin: 0;
-            padding: 0;
-            
-            & > li:not(.parent) li {
-                display: none;
-            }
-            
-            & > li.current li {
-                display: block;
-            }
-        }
-    }
     
     .exhibits.browse .secondary-nav + nav.pagination-nav {
         width: 100%;

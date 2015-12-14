@@ -14,12 +14,12 @@
                     <?php $file = $featuredExhibit->getFile(); ?>
                 <?php if ($file): ?>
                     <?php $exhibitImage = metadata($file, 'fullsize_uri'); ?>
-                    <div id="featured-exhibit-image-container">
-                        <img class="sp-image" src="<?php echo $exhibitImage; ?>" alt="featured Exhibit Image" />
+                    <div class="sp-layer sp-static" data-width="70%" data-height="100%" id="featured-exhibit-image-container">
+                        <img src="<?php echo $exhibitImage; ?>" alt="featured Exhibit Image" />
                     </div>
                 <?php endif; ?>
 
-                <div class="sp-layer sp-black sp-padding" data-position="topRight" data-width="30%" data-height="99%">
+                <div class="sp-layer sp-static sp-black sp-padding" data-position="topRight" data-width="30%" data-height="100%">
                     <div class="featured-text">
                         <h3><?php echo exhibit_builder_link_to_exhibit($featuredExhibit); ?></h3>
 

@@ -1,5 +1,4 @@
 #site-title {
-    width:50%;
     float: left;
     text-align: left;
     padding: rhythm() 0 rhythm() $gutter-width;
@@ -256,3 +255,76 @@ div#search-container {
 /* Items */
 
 .item-description {clear:none}
+
+#exhibit-pages {
+    clear:none;
+    width: columns(3);
+    overflow: hidden;
+    background-color: lighten($slate, 15%);
+    margin: 0;
+    border-color: $sky;
+    padding: 0 gutter(16);
+    @include leading-border(5px, 1, $base-font-size, solid);
+    @include trailing-border(1px, 1, $base-font-size, solid);
+    word-break: break-all;
+    
+    & ~ * {
+        @include span-columns(9 omega);
+        clear: right;
+    }
+    
+    ul ul,
+    .child-pages {
+        margin: 0;
+        overflow: hidden;
+        padding:0 0 0 gutter(2);
+        border-left:1px solid #686C42;
+    }
+    
+    .current ul {
+        font-weight: normal;
+    }
+    
+    li {
+        list-style-type: none;
+        float: none;
+        @include padding-leader(.5);
+    }
+
+    & > h4 {
+        font-size: 1.25 * $base-font-size;
+        @include trailer(1, 1.25 * $base-font-size);
+        @include bleed(1 of 16);
+        @include trailing-border(1px, .75, 1.25 * $base-font-size, solid);
+        border-color: $sky;
+        font-variant:small-caps;
+    }
+    
+    & > ul {
+        margin: 0;
+        padding: 0;
+        
+        & > li:not(.parent) li {
+            display: none;
+        }
+        
+        & > li.current li {
+            display: block;
+        }
+    }
+    .mobile {
+        display:none;
+    }
+
+    ul, h4 {
+        display:block;
+    }
+}
+
+.exhibits.summary #primary,
+.exhibits.show #content > h1:first-of-type,
+.exhibits.summary #content > h1:first-of-type,
+#exhibit-blocks,
+#exhibit-page-navigation {
+    @include span-columns(9 omega);
+}

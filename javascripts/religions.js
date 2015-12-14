@@ -6,14 +6,15 @@ if (!Religions) {
     
     Religions.mobileSelectNav = function () {
         // Create the dropdown base
-        $("<select class=\"mobile\" />").appendTo("#primary-nav");
+        $("<select class=\"mobile\" />").appendTo("#primary-nav, #exhibit-pages");
+
         
         // Create default option "Go to..."
         $("<option />", {
            "selected": "selected",
            "value"   : "",
            "text"    : "Go to..."
-        }).appendTo("#primary-nav select");
+        }).appendTo("#primary-nav select, #exhibit-pages select");
         
         // Populate dropdown with menu items
         $("#primary-nav a").each(function() {
@@ -32,6 +33,34 @@ if (!Religions) {
                 }).appendTo("#primary-nav select");
             }
             $("#primary-nav select").change(function() {
+              window.location = $(this).find("option:selected").val();
+            });
+        });
+
+        checkSize();
+        $(window).resize(checkSize);
+        function checkSize() {
+            if($("#primary-nav ul").css("display") == "none"){
+                $("#exhibit-pages").insertBefore('#exhibit-blocks');
+            }
+        }
+
+        $("#exhibit-pages a").each(function() {
+            var el = $(this);
+            if (el.parents('ul ul').length) {
+                var parentCount = el.parents("ul").length;
+                var dashes = new Array(parentCount).join('- ');
+                $("<option />", {
+                    "value": el.attr("href"),
+                    "text":  dashes + el.text()
+                }).appendTo("#exhibit-pages select");
+            } else {
+                $("<option />", {
+                    "value": el.attr("href"),
+                    "text": el.text()
+                }).appendTo("#exhibit-pages select");
+            }
+            $("#exhibit-pages select").change(function() {
               window.location = $(this).find("option:selected").val();
             });
         });
@@ -81,6 +110,8 @@ if (!Religions) {
                 // autoHeight: true,
                 buttons:false,
                 autoplay:false,
+                //imageScaleMode:'contain',
+                autoScaleReference: 1,
             });
     });
     }
