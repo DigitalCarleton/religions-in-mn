@@ -1272,7 +1272,7 @@ th {
     margin-bottom: 10px;
   }
 
-  .sp-layer {
+  .sp-layer, .sp-slide {
     background: #333;
   }
 
