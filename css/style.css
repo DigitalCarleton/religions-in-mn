@@ -1272,6 +1272,10 @@ th {
     margin-bottom: 10px;
   }
 
+  .sp-layer {
+    background: #333;
+  }
+
   .sp-layer p {
     font-size: 14px;
     margin-bottom: 5px;
