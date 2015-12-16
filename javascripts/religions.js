@@ -106,12 +106,13 @@ if (!Religions) {
             $( '.slider-pro' ).sliderPro({
                 width:'100%',
                 arrows: true,
-                height:400,
+                height:450,
                 // autoHeight: true,
                 buttons:false,
                 autoplay:false,
-                //imageScaleMode:'contain',
+                imageScaleMode:'contain',
                 autoScaleReference: 1,
+                //thumbnailsPosition:'top',
             });
     });
     }
