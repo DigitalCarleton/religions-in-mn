@@ -113,6 +113,18 @@ if (!Religions) {
                 imageScaleMode:'contain',
                 autoScaleReference: 1,
                 //thumbnailsPosition:'top',
+                breakpoints: {
+                    780: {
+                    width:'100%',
+                    arrows: true,
+                    height:200,
+                    // autoHeight: true,
+                    buttons:false,
+                    autoplay:false,
+                    imageScaleMode:'contain',
+                    autoScaleReference: 1,
+                    }
+                }
             });
     });
     }
