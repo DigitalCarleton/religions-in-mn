@@ -480,6 +480,7 @@ th {
   }
 
   .pull-quote {
+    clear: both;
     font-size: 35px;
     line-height: 35px;
     margin: .5rem 0 1rem .5rem;
