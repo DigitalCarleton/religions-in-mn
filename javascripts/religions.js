@@ -106,9 +106,10 @@ if (!Religions) {
             $( '.slider-pro' ).sliderPro({
                 width:'100%',
                 arrows: true,
+                fadeArrows: false,
                 height:450,
                 // autoHeight: true,
-                buttons:false,
+                buttons:true,
                 autoplay:false,
                 imageScaleMode:'contain',
                 autoScaleReference: 1,
@@ -117,9 +118,10 @@ if (!Religions) {
                     780: {
                     width:'100%',
                     arrows: true,
+                    fadeArrows: false,
                     height:200,
                     // autoHeight: true,
-                    buttons:false,
+                    buttons:true,
                     autoplay:false,
                     imageScaleMode:'contain',
                     autoScaleReference: 1,

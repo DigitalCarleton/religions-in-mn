@@ -479,6 +479,11 @@ th {
     font-weight: bold;
   }
 
+  blockquote {
+    font-size: 16.8px;
+    letter-spacing: .5px;
+  }
+
   .pull-quote {
     clear: both;
     font-size: 35px;
