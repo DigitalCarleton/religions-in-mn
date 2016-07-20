@@ -101,18 +101,22 @@ if (!Religions) {
         });
     }
 
+    // This function sets the parameters for the exhibit sliders.  For the full properties list
+    // see https://github.com/bqworks/slider-pro/blob/master/docs/api.md#javascript-api
     Religions.slider = function() {
         $( document ).ready(function( $ ) {
             $( '.slider-pro' ).sliderPro({
-                width:'100%',
+                width:'80%',
                 arrows: true,
                 fadeArrows: false,
                 height:450,
                 // autoHeight: true,
                 buttons:true,
-                autoplay:false,
-                imageScaleMode:'contain',
-                autoScaleReference: 1,
+                autoplay:true,
+                // imageScaleMode:'cover',
+                autoSlideSize:true,
+                // autoScaleReference: 1,
+                visibleSize:'100%',
                 //thumbnailsPosition:'top',
                 breakpoints: {
                     780: {
@@ -122,8 +126,8 @@ if (!Religions) {
                     height:200,
                     // autoHeight: true,
                     buttons:true,
-                    autoplay:false,
-                    imageScaleMode:'contain',
+                    autoplay:true,
+                    imageScaleMode:'cover',
                     autoScaleReference: 1,
                     }
                 }
