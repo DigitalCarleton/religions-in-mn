@@ -26,6 +26,7 @@
     <?php
     queue_css_file(array('iconfonts', 'style', 'slider-pro.min'));
     queue_css_file('bigfoot-number');
+    queue_css_file('colorbox');
     echo head_css();
     ?>
 
@@ -35,6 +36,7 @@
     <?php queue_js_file('vendor/respond'); ?>
     <?php queue_js_file('bigfoot'); ?>
     <?php queue_js_file('jquery.sliderPro.min'); ?>
+    <?php queue_js_file('jquery.colorbox-min'); ?>
     <?php echo head_js(); ?>
     
     <script type="text/javascript">

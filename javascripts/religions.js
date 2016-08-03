@@ -92,11 +92,18 @@ if (!Religions) {
             var baseUrl = $(this).attr('src');
             var directory = /files\/(\w*)/;
             var fullsizeUrl = baseUrl.replace(directory, "files/fullsize");
+            var cblink = $(this).parent().attr('href');
 
             $(this).colorbox({
                 href: fullsizeUrl,
-                height: "100%",
-                rel: 'gal'
+                rel: 'gal',
+                maxWidth:"75%",
+                maxHeight:"75%",
+                // This function adds the link for single images to cbox photos
+                // but doesn't work for slider photos.
+                onComplete: function() {
+                  $('#colorbox img.cboxPhoto').wrap('<a href="'+cblink+'"></a>');
+                }
             });
         });
     }
