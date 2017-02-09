@@ -493,6 +493,9 @@ th {
     line-height: 1.6;
   }
 
+  /* -- Highlight quote styles -- */
+
+
   .pull-quote {
     clear: both;
     font-size: 35px;
@@ -505,6 +508,83 @@ th {
     position: relative;
   }
 
+  .medium-block-1 {
+      clear: both;
+      line-height: 1.6;
+      margin: .5rem 0 1rem .5rem;
+      padding: 40px;
+      border-left: 6px solid rgba(0, 130, 140, 0.8);
+      background-color: #eee;
+      font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      position: relative;
+  }
+
+  .medium-block-2 {
+      clear: both;
+      line-height: 1.8;
+      margin: 0em 0 2rem .5rem;
+      padding: 0px;
+      position: relative;
+      font-size: 17px;
+      font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+  }
+
+  .medium-block-2:before{
+    color: #ccc;
+    font-family: "Georgia";
+    content: "\201C"; 
+    font-size: 5em;
+    line-height: 0em;
+    margin: 0.5em 0 0 0;
+    vertical-align: -0.4em;
+  }
+
+  .medium-block-2:after{
+    color: #ccc;
+    font-family: "Georgia";
+    content: "\201D"; 
+    font-size: 5em;
+    line-height: 0.1em;
+    margin: 0.1em 0.25em 0em 100%;
+    float: right;
+  }
+  
+  .medium-block-3 {
+      clear: both;
+      line-height: 1.6;
+      /*background: #eee;*/
+      margin: 1rem 0 1.5rem .5rem;
+      padding: 20px;
+      border-left: 7px solid rgba(0, 130, 140, 0.8);
+    
+      font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 17px;
+      position: relative;
+  }
+
+  .medium-block-4 {
+      clear: both;
+      line-height: 1.8;
+      margin: 0em 0 2rem .5rem;
+      padding: 0px;
+      position: relative;
+      font-size: 18px;
+      font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+  }
+
+  .medium-block-4:before{
+    color: rgba(0, 130, 140, 0.8);
+    opacity: .35;
+    font-family: "Georgia";
+    content: "\201C"; 
+    font-size: 10em;
+    font-weight: 700;
+    line-height: 0em;
+    margin: 0.5em 0 0 0;
+    position: absolute;
+  }
   
 /* EDIT: quotation marks around pull quotes removed -AM  
   .pull-quote:before {
