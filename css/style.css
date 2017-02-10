@@ -1384,6 +1384,7 @@ th {
 
   .transcription {
     display: none;
+    font-style: italic;
   }
 
   #exhibit-pages, .bigfoot-footnote__container {
