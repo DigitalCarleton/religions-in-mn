@@ -88,7 +88,7 @@ if (!Religions) {
     };
 
     Religions.lightbox = function () {
-        $('#exhibit-blocks img').each(function() {
+        $('.exhibit-gallery-item img').each(function() {
             var baseUrl = $(this).attr('src');
             var directory = /files\/(\w*)/;
             var fullsizeUrl = baseUrl.replace(directory, "files/fullsize");
@@ -98,7 +98,9 @@ if (!Religions) {
                 href: fullsizeUrl,
                 rel: 'gal',
                 maxWidth:"75%",
-                maxHeight:"75%",
+                maxHeight:"95%",
+                next:" > ",
+                previous:" < ",
                 // This function adds the link for single images to cbox photos
                 // but doesn't work for slider photos.
                 onComplete: function() {

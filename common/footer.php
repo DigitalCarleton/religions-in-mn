@@ -31,7 +31,7 @@ jQuery(document).ready(function () {
     Religions.mobileSelectNav();
     Religions.exhibitPages();
     Religions.slider();
-    // Religions.lightbox();
+    Religions.lightbox();
     Religions.toggle();
 });
 </script>
