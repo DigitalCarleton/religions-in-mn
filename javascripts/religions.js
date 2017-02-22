@@ -88,7 +88,7 @@ if (!Religions) {
     };
 
     Religions.lightbox = function () {
-        $('.exhibit-gallery-item img').each(function() {
+        $('.exhibit-gallery-item img, .gallery-showcase img').each(function() {
             var baseUrl = $(this).attr('src');
             var directory = /files\/(\w*)/;
             var fullsizeUrl = baseUrl.replace(directory, "files/fullsize");
