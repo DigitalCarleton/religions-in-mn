@@ -108,6 +108,16 @@ if (!Religions) {
                 }
             });
         });
+        
+        // Add pluralism class to all links to the Pluralism Project
+        $('a[href^="http://pluralism.org"]').addClass('pluralism');
+        
+        // This should load pluralism.org content in an iframe, but doesn't b/c mixed content
+        // $('a.pluralism').colorbox({
+//             iframe: true,
+//             maxWidth:"90%",
+//             maxHeight:"90%",
+//         });
     }
 
     // This function sets the parameters for the exhibit sliders.  For the full properties list

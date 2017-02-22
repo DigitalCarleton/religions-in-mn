@@ -94,6 +94,17 @@ a:hover {
   outline: 0;
 }
 
+/**
+ * Add background image and styling to pluralism project links
+ */
+a.pluralism {
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-image: url(images/rings_icon.png);
+  padding-right: 18px;
+  border-bottom: solid 1px;
+}
+
 /* Text-level semantics
    ========================================================================== */
 /**
