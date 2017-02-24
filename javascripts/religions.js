@@ -130,12 +130,13 @@ if (!Religions) {
                 fadeArrows: false,
                 height:450,
                 // autoHeight: true,
-                buttons:true,
+                buttons:false,
                 autoplay:true,
                 // imageScaleMode:'cover',
                 autoSlideSize:true,
                 // autoScaleReference: 1,
                 visibleSize:'100%',
+                waitForLayers:true,
                 //thumbnailsPosition:'top',
                 breakpoints: {
                     780: {
@@ -144,10 +145,12 @@ if (!Religions) {
                     fadeArrows: false,
                     height:200,
                     // autoHeight: true,
-                    buttons:true,
+                    buttons:false,
                     autoplay:true,
                     imageScaleMode:'cover',
                     autoScaleReference: 1,
+                    thumbnailHeight: 50,
+                    thumbnailWidth: 50,
                     }
                 }
             });
