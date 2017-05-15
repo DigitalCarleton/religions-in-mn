@@ -109,9 +109,12 @@ if (!Religions) {
             });
         });
         
+        // open all external links in new windows
+        $('a:not([href^="https://religionsmn.carleton.edu"]):not([href^="#"]):not([href^="/"])').attr('target','_blank');
+        
         // Add pluralism class to all links to the Pluralism Project
         $('a[href^="http://pluralism.org"]').addClass('pluralism');
-        
+              
         // This should load pluralism.org content in an iframe, but doesn't b/c mixed content
         // $('a.pluralism').colorbox({
 //             iframe: true,
