@@ -1470,10 +1470,11 @@ th {
   }
 }
 @media screen and (min-width: 768px) {
-  #wrap {
+/*  Not resizing attractively and staying stuck at top of page, disabling -AM 170515
+    #wrap {
     background: url(images/sidebanner.png) top left no-repeat fixed;
   }
-
+*/
   #site-title {
     float: left;
     text-align: left;
