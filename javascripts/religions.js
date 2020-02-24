@@ -77,11 +77,11 @@ if (!Religions) {
                 if($window.scrollTop() > offset.top && $window.width() > 767 && ($window.height() - topPadding - 85) >  $exhibitpages.height()) {
                     $exhibitpages.stop().animate({
                         marginTop: $window.scrollTop() - offset.top + topPadding
-                        });
+                        },0);
                 } else {
                     $exhibitpages.stop().animate({
                         marginTop: 0
-                    });
+                    },0);
                 }
             });
         }
