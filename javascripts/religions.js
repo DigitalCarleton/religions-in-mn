@@ -134,7 +134,7 @@ if (!Religions) {
                 height:450,
                 // autoHeight: true,
                 buttons:false,
-                autoplay:true,
+                autoplay:false,
                 // imageScaleMode:'cover',
                 autoSlideSize:true,
                 // autoScaleReference: 1,
