@@ -183,6 +183,11 @@ if (!Religions) {
         });
 
     }
+    Religions.sidebar = function() {
+        $( "#exhibit-pages ul li:not(.current,.parent) ul" ).prev().prepend("⮞ ");
+        $( "#exhibit-pages ul li.current>ul" ).prev().prepend("⮟ ");
+        $( "#exhibit-pages ul li.parent>ul" ).prev().prepend("⮟ ");
+    }
 
 
 })(jQuery);

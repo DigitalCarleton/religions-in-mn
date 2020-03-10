@@ -33,6 +33,7 @@ jQuery(document).ready(function () {
     Religions.slider();
     Religions.lightbox();
     Religions.toggle();
+    Religions.sidebar();
 });
 </script>
 
