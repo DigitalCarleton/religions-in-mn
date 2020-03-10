@@ -160,11 +160,28 @@ if (!Religions) {
     });
     }
 
+    // Religions.toggle = function() {
+    //     $( ".show-transcription" ).click(function(e) {
+    //         e.preventDefault();
+    //       $( ".transcription" ).toggle( "blind", 300 );
+    //     });
+    // }
     Religions.toggle = function() {
+
         $( ".show-transcription" ).click(function(e) {
             e.preventDefault();
+            // $(".show-transcription").parent("p").css("margin-bottom","0px");
           $( ".transcription" ).toggle( "blind", 300 );
+
+          if ($(".show-transcription").text() =='Show Transcription ⮟') {
+                 $(".show-transcription").html("Hide transcription ⮝")
+                 // $(".show-transcription").parent("p").css("margin-bottom","0px");
+          } else {
+              $(".show-transcription").html('Show Transcription ⮟')
+              // $(".show-transcription").parent("p").css("margin-bottom","1.42857em");
+          }
         });
+
     }
 
 
