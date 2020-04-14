@@ -77,11 +77,11 @@ if (!Religions) {
                 if($window.scrollTop() > offset.top && $window.width() > 767 && ($window.height() - topPadding - 85) >  $exhibitpages.height()) {
                     $exhibitpages.stop().animate({
                         marginTop: $window.scrollTop() - offset.top + topPadding
-                        });
+                        },0);
                 } else {
                     $exhibitpages.stop().animate({
                         marginTop: 0
-                    });
+                    },0);
                 }
             });
         }
@@ -134,7 +134,7 @@ if (!Religions) {
                 height:450,
                 // autoHeight: true,
                 buttons:false,
-                autoplay:true,
+                autoplay:false,
                 // imageScaleMode:'cover',
                 autoSlideSize:true,
                 // autoScaleReference: 1,
@@ -160,11 +160,33 @@ if (!Religions) {
     });
     }
 
+    // Religions.toggle = function() {
+    //     $( ".show-transcription" ).click(function(e) {
+    //         e.preventDefault();
+    //       $( ".transcription" ).toggle( "blind", 300 );
+    //     });
+    // }
     Religions.toggle = function() {
+
         $( ".show-transcription" ).click(function(e) {
             e.preventDefault();
+            // $(".show-transcription").parent("p").css("margin-bottom","0px");
           $( ".transcription" ).toggle( "blind", 300 );
+
+          if ($(".show-transcription").text() =='Show Transcription ⮟') {
+                 $(".show-transcription").html("Hide transcription ⮝")
+                 // $(".show-transcription").parent("p").css("margin-bottom","0px");
+          } else {
+              $(".show-transcription").html('Show Transcription ⮟')
+              // $(".show-transcription").parent("p").css("margin-bottom","1.42857em");
+          }
         });
+
+    }
+    Religions.sidebar = function() {
+        $( "#exhibit-pages ul li:not(.current,.parent) ul" ).prev().prepend("⮞ ");
+        $( "#exhibit-pages ul li.current>ul" ).prev().prepend("⮟ ");
+        $( "#exhibit-pages ul li.parent>ul" ).prev().prepend("⮟ ");
     }
 
 

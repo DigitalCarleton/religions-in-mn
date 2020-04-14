@@ -1825,3 +1825,41 @@ th {
     display: inline;
   }
 }
+
+/****** Show Transcription*****/
+
+.show-transcription {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 5px 10px 5px 10px;
+}
+
+.show-transcription:hover {
+  text-decoration: none;
+}
+
+
+.transcription {
+  display: none;
+  /*font-style: italic;*/
+  /*border: 1px solid #ccc;*/
+  /*border-radius: 4px;*/
+/*  padding: 0;
+  margin: 2px 0 1.42857em 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);*/
+  
+  list-style-type: none;
+
+  clear: both;
+    font-size: 16px;
+    line-height: 12px;
+    margin: 2px 0 1.42857em 0;
+    padding: 1rem 2rem;
+    /*color: #fff;*/
+    background: #eee;
+    position: relative;
+
+}
+
+/*****************/
