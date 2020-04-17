@@ -173,11 +173,11 @@ if (!Religions) {
             // $(".show-transcription").parent("p").css("margin-bottom","0px");
           $( ".transcription" ).toggle( "blind", 300 );
 
-          if ($(".show-transcription").text() =='Show Transcription ⮟') {
-                 $(".show-transcription").html("Hide transcription ⮝")
-                 // $(".show-transcription").parent("p").css("margin-bottom","0px");
+          if ($(".show-transcription").text() =='Show Transcription') {
+                 $(".show-transcription").html("Hide transcription")
+                 // $(".show-transcription").parent("p").css("margin-bottom","0px⮟⮝");
           } else {
-              $(".show-transcription").html('Show Transcription ⮟')
+              $(".show-transcription").html('Show Transcription')
               // $(".show-transcription").parent("p").css("margin-bottom","1.42857em");
           }
         });
@@ -185,6 +185,7 @@ if (!Religions) {
     }
     Religions.sidebar = function() {
         $( "#exhibit-pages ul li:not(.current,.parent) ul" ).prev().prepend("⮞ ");
+        // $( "#exhibit-pages ul li:not(.current,.parent) ul" ).prev().prepend('<span class="ui-icon ui-icon-caret-1-e"></span>');
         $( "#exhibit-pages ul li.current>ul" ).prev().prepend("⮟ ");
         $( "#exhibit-pages ul li.parent>ul" ).prev().prepend("⮟ ");
     }
