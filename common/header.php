@@ -23,6 +23,7 @@
     <!-- Stylesheets -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/858864c666.js" crossorigin="anonymous"></script>
     <?php
     queue_css_file(array('iconfonts', 'style', 'slider-pro.min'));
     queue_css_file('bigfoot-number');
