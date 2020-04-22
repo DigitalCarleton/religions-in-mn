@@ -1393,11 +1393,11 @@ th {
     font-style: italic;
   }
 
-  .transcription {
+ /* .transcription {
     display: none;
     font-style: italic;
     line-height: 110%;
-  }
+  }*/
 
   #exhibit-pages, .bigfoot-footnote__container {
     overflow-wrap: break-word;
@@ -1834,6 +1834,7 @@ th {
   border: 1px solid gray;
   border-radius: 4px;
   padding: 5px 10px 5px 10px;
+  font-variant: small-caps;
 }
 
 .show-transcription:hover {
@@ -1854,7 +1855,7 @@ th {
 
   clear: both;
     font-size: 16px;
-    line-height: 12px;
+    line-height: 110%;
     margin: 2px 0 1.42857em 0;
     padding: 1rem 2rem;
     /*color: #fff;*/
