@@ -185,10 +185,10 @@ if (!Religions) {
     }
     Religions.sidebar = function() {
         // $( "#exhibit-pages ul li:not(.current,.parent) ul" ).prev().prepend('<div class="drawer" title = "Expand/Collapse">');
-        $( "#exhibit-pages ul li:not(.current,.parent) ul" ).prev().prepend('<i class="fas fa-chevron-right"></i> ');
+        $( "#exhibit-pages ul li:not(.current,.parent) ul" ).prev().prepend('<i class="fas fa-caret-right"></i> ');
         // $( "#exhibit-pages ul li:not(.current,.parent) ul" ).prev().prepend⮞('<span class="ui-icon ui-icon-caret-1-e"></span>');
-        $( "#exhibit-pages ul li.current>ul" ).prev().prepend('<i class="fas fa-chevron-down"></i> ');
-        $( "#exhibit-pages ul li.parent>ul" ).prev().prepend('<i class="fas fa-chevron-down"></i> ');
+        $( "#exhibit-pages ul li.current>ul" ).prev().prepend('<i class="fas fa-caret-down"></i> ');
+        $( "#exhibit-pages ul li.parent>ul" ).prev().prepend('<i class="fas fa-caret-down"></i> ');
     }
 
 
