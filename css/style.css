@@ -637,6 +637,7 @@ th {
 
   button.bigfoot-footnote__button {
     min-height: 0;
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   input[type="submit"],
