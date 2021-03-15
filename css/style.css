@@ -1504,8 +1504,14 @@ th {
     color: #35363A;
   }
   
-  .feaatured-title {
+  .featured-content h1 {
+    color: #35363A;
     font-variant: small-caps;
+  }
+  
+  .featured-content h2 {
+    color: #35363A;
+    margin:0px;
   }
   
   .featured-content ul {
