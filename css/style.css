@@ -1470,7 +1470,54 @@ th {
   #recaptcha_area input {
     min-height: 0;
   }
+  
+  /* == Home page flex == */
+  section {
+    margin: 28px 0px;
+/*     padding: 28px 0px; */
+    background:red; //remove
+  }
+
+  .wrapper {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .featured {
+    flex: 1;
+    padding: 0px 15px;
+/*     margin:auto; */
+    text-align:left;
+    background:blue; //remove
+  }
+
+  .featured-content {
+    flex: 2;
+  }
+
+  .aligncenter, div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .home-widget {
+    flex: 1;
+    text-align:center;
+    padding: 15px;
+/*     background:green; //remove */
+  }
+
+  .widget-wrapper {
+    padding: 5px 15px;
+    background-color:white;
+  }
 }
+
 @media screen and (min-width: 768px) {
 /*  Not resizing attractively and staying stuck at top of page, disabling -AM 170515
     #wrap {
@@ -1826,6 +1873,15 @@ th {
     *margin-left: -1em;
     display: inline;
   }
+  
+  /* == Home page flex == */
+  .home-widget-wrapper {
+    flex-direction: column;
+  }
+
+  .featured-area-wrapper {
+    align-items:flex-start;
+  }  
 }
 
 /****** Show Transcription*****/
