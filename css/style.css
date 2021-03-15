@@ -1501,6 +1501,7 @@ th {
   .aligncenter, div.aligncenter {
     display: block;
     margin: 5px auto 5px auto;
+    width: 300px;
     height: auto;
     max-width: 100%;
   }
