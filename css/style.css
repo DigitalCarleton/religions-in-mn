@@ -1486,6 +1486,10 @@ th {
     justify-content:center;
   }
   
+  .featured-area-wrapper {
+    background: linear-gradient(315deg, #ADB5DC, #F5F6FB, white);
+  }
+  
   .featured {
     flex: 1;
     padding: 0px 15px;
@@ -1497,13 +1501,21 @@ th {
   .featured-content {
     flex: 2;
     padding: 28px;
+    color: #35363A;
+  }
+  
+  .feaatured-title {
+    font-variant: small-caps;
+  }
+  
+  .featured-content ul {
+    margin: .42857em 0;
   }
   
   .featured-content li {
     font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.2em;
     margin-bottom: 0.1em;
-    color: #666;
     list-style-type: none;
   }
 
