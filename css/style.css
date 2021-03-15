@@ -1473,7 +1473,7 @@ th {
   
   /* == Home page flex == */
   .section {
-    margin: 28px 0px;
+    margin-bottom: 28px;
 /*     padding: 28px 0px; */
 /*     background:red; //remove */
   }
