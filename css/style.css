@@ -1475,7 +1475,7 @@ th {
   section {
     margin: 28px 0px;
 /*     padding: 28px 0px; */
-    background:red; //remove
+/*     background:red; //remove */
   }
 
   .wrapper {
@@ -1491,7 +1491,7 @@ th {
     padding: 0px 15px;
 /*     margin:auto; */
     text-align:left;
-    background:blue; //remove
+/*     background:blue; //remove */
   }
 
   .featured-content {
@@ -1514,7 +1514,7 @@ th {
 
   .widget-wrapper {
     padding: 5px 15px;
-    background-color:white;
+/*     background-color:white; */
   }
 }
 
