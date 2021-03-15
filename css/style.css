@@ -1540,6 +1540,11 @@ th {
     padding: 15px;
 /*     background:green; //remove */
   }
+  
+  .home-widget p {
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #35363A;
+  }
 
   .widget-wrapper {
     padding: 5px 15px;
