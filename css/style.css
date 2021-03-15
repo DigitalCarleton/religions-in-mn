@@ -1507,12 +1507,13 @@ th {
     list-style-type: none;
   }
 
-  .aligncenter, div.aligncenter {
+  .aligncenter, .widget-wrapper img.full {
     display: block;
     margin: 5px auto 5px auto;
-    width: 300px;
+    width: 400px;
     height: auto;
     max-width: 100%;
+    float:none;
   }
 
   .home-widget {
