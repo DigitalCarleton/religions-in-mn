@@ -1485,6 +1485,10 @@ th {
     align-items:flex-start;
     justify-content:center;
   }
+  
+  .featured-area-wrapper {
+    flex-direction:row;
+  }
 
   .featured {
     flex: 1;
@@ -1875,7 +1879,7 @@ th {
   }
   
   /* == Home page flex == */
-  .home-widget-wrapper {
+  .wrapper {
     flex-direction: row;
   }
 
