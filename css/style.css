@@ -1497,6 +1497,14 @@ th {
   .featured-content {
     flex: 2;
   }
+  
+  .featured-content li {
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0.1em;
+    color: #666;
+    list-style-type: none;
+  }
 
   .aligncenter, div.aligncenter {
     display: block;
