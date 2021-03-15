@@ -1480,9 +1480,9 @@ th {
 
   .wrapper {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     width:100%;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
   }
 
@@ -1876,11 +1876,11 @@ th {
   
   /* == Home page flex == */
   .home-widget-wrapper {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .featured-area-wrapper {
-    align-items:flex-start;
+    align-items:center;
   }  
 }
 
