@@ -1486,10 +1486,6 @@ th {
     justify-content:center;
   }
   
-  .featured-area-wrapper {
-    flex-direction:row;
-  }
-
   .featured {
     flex: 1;
     padding: 0px 15px;
@@ -1883,8 +1879,8 @@ th {
     flex-direction: row;
   }
 
-  .featured-area-wrapper {
-    align-items:center;
+  .home-widget-wrapper {
+    align-items:flex-start;
   }  
 }
 
