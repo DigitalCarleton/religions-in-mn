@@ -1496,6 +1496,7 @@ th {
 
   .featured-content {
     flex: 2;
+    padding: 28px;
   }
   
   .featured-content li {
