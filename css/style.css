@@ -424,7 +424,7 @@ th {
   }
 
   #wrap {
-    border-top: 2.85714em solid #00d1e1;
+/*    border-top: 2.85714em solid #00d1e1;*/
   }
 
   /* -- Headings -- */
@@ -1487,7 +1487,7 @@ th {
   }
   
   .featured-area-wrapper {
-    background: linear-gradient(315deg, #ADB5DC, #F5F6FB, white);
+/*    background: linear-gradient(315deg, #ADB5DC, #F5F6FB, white);*/
   }
   
   .featured {
